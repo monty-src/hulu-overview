@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>New Ombo</title>
+        <title>Casting</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
