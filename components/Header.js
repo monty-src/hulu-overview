@@ -1,13 +1,21 @@
 import Image from 'next/Image';
+import {
+  BadgeCheckIcon,
+  CollectionIcon,
+  HomeIcon,
+  LightningBoltIcon,
+  SearchIcon,
+  UserIcon
+} from '@heroicons/react/outline';
+
 import HeaderItem from './HeaderItem';
+
 
 const Header = () => {
   return (
-    <header className=''>
-      <h1>This is the header</h1>
+    <header>
       <div>
-        <HeaderItem title='Home' Icon={} />
-        <HeaderItem title='Home' />
+        <HeaderItem title='HOME' Icon={HomeIcon} />
       </div>
       <Image
         className="object-container"
