@@ -1,10 +1,11 @@
+import { forwardRef } from 'react';
 import Image from 'next/Image';
-import { ThumbUpIcon } from '@heroicons/react/outline'
+import { ThumbUpIcon } from '@heroicons/react/outline';
 
-const Thumbnail = ({id, result}) => {
+const Thumbnail = forwardRef(({result}, ref) => {
   const BASE_URL = 'https://image.tmdb.org/t/p/original/'
   return (
-    <div className="
+    <div ref={ref} className="
       p-2
       transition
       duration-200
@@ -13,7 +14,7 @@ const Thumbnail = ({id, result}) => {
       hover:z-50
       group
       cursor-pointer
-    " key={id}>
+    " key={result.id}>
       <Image
         src={`${BASE_URL}${result.backdrop_path || result.poster_path}` ||`${BASE_URL}${result.poster_path}`}
         height={1080}
@@ -35,6 +36,6 @@ const Thumbnail = ({id, result}) => {
       </div>
     </div>
   )
-}
+});
 
 export default Thumbnail;
