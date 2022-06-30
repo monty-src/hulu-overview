@@ -13,7 +13,14 @@ import HeaderItem from './HeaderItem';
 
 const Header = () => {
   return (
-    <header className="flex flex-col">
+    <header className="
+      flex
+      flex-col
+      sm:flex-row
+      m-5
+      justify-between
+      items-center
+      h-auto">
       <div className="
         flex
         flex-grow
