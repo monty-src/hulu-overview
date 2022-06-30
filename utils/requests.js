@@ -10,19 +10,19 @@ export default {
     url: `/discover/movie?api_key=${API_KEY}&language=en-US`
   },
   fetchActionsMovies: {
-    title: 'Action Movies',
+    title: 'Action',
     url: `/trending/all/week?api_key=${API_KEY}&with_genres=28`
   },
   fetchComedyMovies: {
-    title: 'Comedy Movies',
+    title: 'Comedy ',
     url: `/discover/movie?api_key=${API_KEY}&with_genres=35`
   },
   fetchHorrorMovies: {
-    title: 'Horror Movies',
+    title: 'Horror',
     url: `/discover/movie?api_key=${API_KEY}&with_genres=27`
   },
   fetchRomanceMovies: {
-    title: 'Romance Movies',
+    title: 'Romance',
     url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`
   },
   fetchMystery: {
@@ -36,5 +36,13 @@ export default {
   fetchWestern: {
     title: 'Western',
     url: `/discover/movie?api_key=${API_KEY}&with_genres=37`
-  }
+  },
+  fetchAnimation: {
+    title: 'Animation',
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=16`
+  },
+  fetchTVMovie: {
+    title: 'TV Movies',
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
+  },
 }
