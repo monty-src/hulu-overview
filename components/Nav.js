@@ -39,14 +39,6 @@ const Nav = () => {
         h-10
         w-1/12
       '></div>
-      <div className='
-        absolute
-        top-0
-        left-0
-        bg-gradient-to-r from-[#06202A]
-        h-10
-        w-1/12
-      '></div>
     </nav>
   )
 }
